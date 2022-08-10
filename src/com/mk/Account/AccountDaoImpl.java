@@ -105,7 +105,7 @@ public class AccountDaoImpl implements AccountDao{
             throw new RuntimeException(e);
         }
     }
-    @Transactional
+    @Transactional//注解形式实现事务管理
     public void tranfAccount2(String sourceName, String targetName, Double money){
 //        DefaultTransactionDefinition tdefiniton=new DefaultTransactionDefinition();
 //        tdefiniton.setPropagationBehavior(DefaultTransactionDefinition.PROPAGATION_REQUIRED);
