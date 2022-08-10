@@ -11,8 +11,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
 
-//@Component("aspect")
-//@org.aspectj.lang.annotation.Aspect
+//通过切面编程的形式实现事务管理
+@Component("aspect")
+@org.aspectj.lang.annotation.Aspect
 public class Aspect {
     @Autowired
     @Qualifier("transactionManager")
